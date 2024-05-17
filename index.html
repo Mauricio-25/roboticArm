@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotic Arm</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full relative">
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .gradient {
+        background-image: linear-gradient(93deg, rgba(0,118,204,1) 0%, rgba(50,181,255,1) 64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .inputVertical {
+        writing-mode: vertical-lr;
+        appearance: none; 
+        -webkit-appearance: none; /* Quita el estilo predeterminado de WebKit */
+        width: 12px;
+        height: 320px; /* Grosor de la barra */
+        background: #9FDCFF; /* Color de fondo de la barra */
+        border-radius: 20px; /* Radio de borde para la barra */
+      }
+
+      .inputVertical::-webkit-slider-runnable-track {
+        width: 12px;
+        height: 350px; /* Grosor de la barra */
+        background: #9FDCFF; /* Color de fondo de la barra */
+        border-radius: 20px; /* Radio de borde para la barra */
+      }
+
+      /* Pseudo-elemento que representa el control deslizante */
+      .inputVertical::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Quita el estilo predeterminado de WebKit */
+        appearance: none;
+        width: 20px; /* Ancho del control deslizante */
+        height: 20px; /* Altura del control deslizante */
+        background: #32B5FF; /* Color del control deslizante */
+        border-radius: 50%; /* Hace que el control deslizante sea redondo */
+        margin-left: -4px;
+      }
+
+      /* !  */
+      .inputHorizontal {
+        -webkit-appearance: none; /* Quita el estilo predeterminado de WebKit */
+        appearance: none;
+        height: 12px; /* Grosor de la barra */
+        background: #9BB7FF; /* Color de fondo de la barra */
+        border-radius: 20px; /* Radio de borde para la barra */
+      }
+
+      .inputHorizontal::-webkit-slider-runnable-track {
+        height: 12px; /* Grosor de la barra */
+        background: #9BB7FF; /* Color de fondo de la barra */
+        border-radius: 20px; /* Radio de borde para la barra */
+      }
+
+      /* Pseudo-elemento que representa el control deslizante */
+      .inputHorizontal::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Quita el estilo predeterminado de WebKit */
+        appearance: none;
+        width: 20px; /* Ancho del control deslizante */
+        height: 20px; /* Altura del control deslizante */
+        background: #4678FB; /* Color del control deslizante */
+        border-radius: 50%; /* Hace que el control deslizante sea redondo */
+        margin-top: -4px;
+      }
+
+    </style>
+
+    <div id="root" class="h-full relative md:flex md:justify-center md:bg-slate-100"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
