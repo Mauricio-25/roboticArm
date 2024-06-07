@@ -14,8 +14,8 @@ function Nav({ firstSecActive }) {
 
     return (
         <>
-          <nav className='shadow-[0_2px_15px_rgba(188,188,188,1)]'>
-            <ul className='grid grid-cols-2 items-center'>
+          <nav className='shadow-[0_2px_15px_rgba(188,188,188,1)] relative z-10 bg-white flex justify-center items-center'>
+            <ul className='grid grid-cols-2 items-center w-full'>
               {firstSecActive ? (
                 <>
                   <Li texto="Articulaciones" icon={iconArmActive} url={url1} isActive />
